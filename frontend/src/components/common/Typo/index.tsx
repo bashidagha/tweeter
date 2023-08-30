@@ -15,7 +15,7 @@ export default function Typo({
   Component,
   children,
   variant = "normal",
-  weight = "500",
+  weight = "400",
 }: IProps) {
   return (
     <Component
