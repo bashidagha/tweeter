@@ -1,4 +1,5 @@
 import styles from "./layout.module.scss";
+import "./layout.scss";
 
 export default function ProfileLayout({
   children,
