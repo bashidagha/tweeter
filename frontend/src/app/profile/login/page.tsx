@@ -9,7 +9,7 @@ export default function Login() {
     <div className={styles.main}>
       <div className={clsx(styles.wrapper, "card")}>
         <Image src="/tweeter.svg" width="130" height="18" alt="tweeter" />
-        <Typo Component="h2">
+        <Typo Component="h2" weight="700">
           Join thousands of learners from around the world
         </Typo>
         <Typo Component={"p"} variant="xl">

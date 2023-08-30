@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap");
 ::-webkit-scrollbar {
   width: 0.6vw;
 }
@@ -39,7 +40,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color-1);
   font-size: var(--font-size);
