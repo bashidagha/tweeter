@@ -3,9 +3,17 @@ import Button from "@/components/common/Button";
 import Input from "@/components/common/Input";
 import Typo from "@/components/common/Typo";
 import Footer from "@/components/layout/Footer";
-import { UilEnvelopeAlt, UilLock } from "@iconscout/react-unicons";
+import {
+  UilEnvelopeAlt,
+  UilLock,
+  UilGoogle,
+  UilFacebook,
+  UilTwitter,
+  UilGithub,
+} from "@iconscout/react-unicons";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
 import styles from "./page.module.scss";
 
@@ -61,8 +69,27 @@ export default function Login() {
           </Button>
         </form>
 
-        <Typo Component="p" variant="sm">
+        <Typo Component="p" variant="sm" classes={styles.text_mute}>
           or continue with these social profile
+        </Typo>
+
+        <div className={styles.social_icons}>
+          <Link href={"google.com"}>
+            <UilGoogle />
+          </Link>
+          <Link href={"google.com"}>
+            <UilFacebook />
+          </Link>
+          <Link href={"google.com"}>
+            <UilTwitter />
+          </Link>
+          <Link href={"google.com"}>
+            <UilGithub />
+          </Link>
+        </div>
+
+        <Typo Component="p" variant="sm" classes={styles.text_mute}>
+          Don’t have an account yet? <Link href={"/register"}>Register</Link>
         </Typo>
       </div>
       <Footer />

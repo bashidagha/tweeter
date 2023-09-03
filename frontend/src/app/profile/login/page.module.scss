@@ -9,6 +9,7 @@
     flex: 1 1;
     justify-content: flex-start;
     flex-direction: column;
+    padding-bottom: 6rem;
 
     h2 {
       margin: 2.7rem 0 1.4rem 0;
@@ -17,10 +18,39 @@
       margin-top: 1.8rem;
     }
 
+    .social_icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2.5rem 0;
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: var(--text-muted);
+      }
+      a {
+        width: 4.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.2rem;
+        border-radius: 50%;
+        border: 1px solid var(--text-muted);
+      }
+    }
+
+    .text_mute {
+      text-align: center;
+      color: var(--text-muted);
+      a {
+        color: var(--primary-color);
+      }
+    }
+
     form {
       display: flex;
       flex-direction: column;
-      margin-top: 3.5rem;
+      margin: 3.5rem 0;
       .input {
         svg {
           width: 2.4rem;
