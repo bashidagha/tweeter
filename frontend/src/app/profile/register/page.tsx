@@ -44,7 +44,11 @@ export default function Login() {
           className={styles.logo}
         />
         <Typo Component="h2" weight="700">
-          Login
+          Join thousands of learners from around the world
+        </Typo>
+        <Typo Component={"p"}>
+          Master web development by making real-life projects. There are
+          multiple paths for you to choose
         </Typo>
 
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -61,7 +65,7 @@ export default function Login() {
             register={register}
           />
           <Button classes={styles.login_btn} type="submit">
-            Login
+            Start coding now
           </Button>
         </form>
 
@@ -85,8 +89,7 @@ export default function Login() {
         </div>
 
         <Typo Component="p" variant="sm" classes={styles.text_mute}>
-          Don’t have an account yet?{" "}
-          <Link href={"/profile/register"}>Register</Link>
+          Adready a member? <Link href={"/profile/login"}>Login</Link>
         </Typo>
       </div>
       <Footer />
