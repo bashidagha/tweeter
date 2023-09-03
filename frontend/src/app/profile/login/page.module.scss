@@ -1,18 +1,37 @@
-.main{
+@import "../../../styles/mixins";
+
+.main {
   display: flex;
   flex-direction: column;
   height: 100%;
+  .wrapper {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    h2 {
+      margin: 2.7rem 0 1.4rem 0;
+    }
+    .logo {
+      margin-top: 1.8rem;
+    }
+    .input {
+      svg{
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: var(--text-muted);
+      }
+    }
+    .login_btn{
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
 }
 
-.wrapper {
-  display: flex;
-  flex: 1 1;
-  flex-direction: column;
-
-  h2 {
-    margin: 2.7rem 0 1.4rem 0;
-  }
-  .logo {
-    margin-top: 1.8rem;
+@include devices(lg) {
+  .main {
+    height: auto;
   }
 }

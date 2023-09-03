@@ -4,30 +4,29 @@ import styles from "./index.module.scss";
 
 interface IProps {
   classes?: string;
-  children: React.ReactNode;
+  rest?: any;
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
+  placeholder?: string;
   variant?: "normal" | "sm" | "lg";
-  rest?: any;
+  defaultValue?: string;
 }
 
-export default function Button({
+export default function Input({
   classes,
-  children,
   startIcon,
   endIcon,
+  placeholder,
   variant = "normal",
+  defaultValue,
   ...rest
 }: IProps) {
   return (
-    <button
-      className={clsx(styles.button, classes, `btn-${variant}`)}
-      {...rest}
-    >
+    <div className={clsx(styles.input, classes, `variant-${variant}`)}>
       {startIcon && (
         <span className={styles.startIconContainer}>{startIcon}</span>
       )}
-      {children}
-    </button>
+      <input placeholder={placeholder} {...rest} />
+    </div>
   );
 }
