@@ -15,16 +15,6 @@
   background-color: var(--thumb-hover-color);
 }
 
-::selection {
-  background-color: var(--main-color-2);
-  color: #fff;
-}
-
-::-moz-selection {
-  background-color: var(--main-color-2);
-  color: #fff;
-}
-
 *,
 *::before,
 *::after {
@@ -44,6 +34,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color-1);
   font-size: var(--font-size);
+  line-height: var(--line-height-1);
 }
 
 section {

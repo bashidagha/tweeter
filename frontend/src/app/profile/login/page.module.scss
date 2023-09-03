@@ -16,16 +16,29 @@
     .logo {
       margin-top: 1.8rem;
     }
-    .input {
-      svg{
-        width: 2.4rem;
-        height: 2.4rem;
-        fill: var(--text-muted);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3.5rem;
+      .input {
+        svg {
+          width: 2.4rem;
+          height: 2.4rem;
+          fill: var(--text-muted);
+        }
       }
-    }
-    .login_btn{
-      font-size: 1.6rem;
-      font-weight: 600;
+
+      .input + .input {
+        margin: 1.4rem 0 2.2rem 0;
+      }
+
+      .login_btn {
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 100%;
+        padding: 1rem 0;
+      }
     }
   }
 }

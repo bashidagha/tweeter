@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import { UseFormRegister } from "react-hook-form";
 import styles from "./index.module.scss";
 
 interface IProps {
@@ -10,6 +11,7 @@ interface IProps {
   placeholder?: string;
   variant?: "normal" | "sm" | "lg";
   defaultValue?: string;
+  register?: any;
 }
 
 export default function Input({
@@ -19,14 +21,14 @@ export default function Input({
   placeholder,
   variant = "normal",
   defaultValue,
-  ...rest
+  register,
 }: IProps) {
   return (
     <div className={clsx(styles.input, classes, `variant-${variant}`)}>
       {startIcon && (
         <span className={styles.startIconContainer}>{startIcon}</span>
       )}
-      <input placeholder={placeholder} {...rest} />
+      <input placeholder={placeholder} {...register} />
     </div>
   );
 }
